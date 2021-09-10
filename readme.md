@@ -1,3 +1,7 @@
 # proyecto
 
-- camino a desarrollador frontend
+- HTML  
+- CSS
+- SASS
+- GIT
+- GITHUB
