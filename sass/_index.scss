@@ -1,12 +1,10 @@
 .noved {
     width: 100%;
     background: #5d7d87;
+    padding: 20px;
     .nov {
         justify-content: space-around;
         padding: 30px 0px 30px 0px;
-    }
-    .img-noved {
-        width: 400px;
     }
     .h2-nov {
         border-bottom: 2px solid black;
@@ -29,6 +27,7 @@
     padding: 20px;
     font-family: 'Kaisei HarunoUmi', serif;
     background-color: white;
+    height: 15rem;
 }
 
 .texto-tipo {
@@ -64,5 +63,11 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+    .descripcion {
+        height: 8rem;
+    }
+    h6 {
+        display: none;
     }
 }

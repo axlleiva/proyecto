@@ -18,6 +18,9 @@ header nav {
       -ms-flex-align: end;
           align-items: flex-end;
   border-bottom: solid 1px white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navegador {
@@ -286,16 +289,13 @@ footer .logoFondo {
 .noved {
   width: 100%;
   background: #5d7d87;
+  padding: 20px;
 }
 
 .noved .nov {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 30px 0px 30px 0px;
-}
-
-.noved .img-noved {
-  width: 400px;
 }
 
 .noved .h2-nov {
@@ -318,6 +318,7 @@ footer .logoFondo {
   padding: 20px;
   font-family: 'Kaisei HarunoUmi', serif;
   background-color: white;
+  height: 15rem;
 }
 
 .texto-tipo {
@@ -375,6 +376,12 @@ footer .logoFondo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .descripcion {
+    height: 8rem;
+  }
+  h6 {
+    display: none;
   }
 }
 
