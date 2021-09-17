@@ -401,6 +401,7 @@ main .nosotros .parrafo {
 
 main .fuera {
   width: 500px;
+  padding: 5px;
 }
 
 main .img_nosotros {
@@ -415,13 +416,31 @@ main .img_nosotros {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .txt-aling {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 400px;
+  /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
   .img_nosotros {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -463,6 +482,7 @@ main .txt-aling {
 
 .opciones .imagenes {
   height: 250px;
+  padding: 5px;
 }
 
 .texto {

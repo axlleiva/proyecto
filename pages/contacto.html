@@ -50,42 +50,45 @@
                 <fieldset>
                     <legend class="titulo-tipo uppercase">Dejanos tu Consulta</legend>
                     <div class="flex-row uppercase contacto">
-                        <div class="nombre ">
-                            <div class="inline">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" id="nombre:">
+                        <div class="row opciones">
+                            <div class="col">
+                                <div class="inline">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" name="nombre" id="nombre:">
+                                    <br>
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" name="apellido:" id="apellido:">
+                                    <br>
+                                    <label for="cel">Celular</label>
+                                    <input type="text" name="cel" id="celular:">
+                                    <br>
+                                    <label for="mail">Email</label>
+                                    <input type="email" name="mail" id="mail:">
+                                </div>
                                 <br>
-                                <label for="apellido">Apellido</label>
-                                <input type="text" name="apellido:" id="apellido:">
-                                <br>
-                                <label for="cel">Celular</label>
-                                <input type="text" name="cel" id="celular:">
-                                <br>
-                                <label for="mail">Email</label>
-                                <input type="email" name="mail" id="mail:">
+                                <label for="">Tenes una unidad Peugeot</label>
+                                <input type="checkbox" name="si tiene">Si
+                                <input type="checkbox" name="no tiene">no
+                                <br><br>
+                                <label for="auto">Motivo</label>
+                                <select name="auto" id="auto">
+                                    <option value="consulta">Consulta</option>
+                                    <option value="ventas">Ventas</option>
+                                    <option value="reclamo">Reclamo</option>
+                                    <option value="postventa">Postventa</option>
+                                </select>
+                                <div id="aler" class="alerta alert alert-primary" role="alert">
+                                    Complete todo los datos!
+                                </div>
                             </div>
-                            <br>
-                            <label for="">Tenes una unidad Peugeot</label>
-                            <input type="checkbox" name="si tiene">Si
-                            <input type="checkbox" name="no tiene">no
-                            <br><br>
-                            <label for="auto">Motivo</label>
-                            <select name="auto" id="auto">
-                                <option value="consulta">Consulta</option>
-                                <option value="ventas">Ventas</option>
-                                <option value="reclamo">Reclamo</option>
-                                <option value="postventa">Postventa</option>
-                            </select>
-                            <div id="aler" class="alerta alert alert-primary" role="alert">
-                                Complete todo los datos!
-                            </div>
-                        </div>
-                        <div class="consulta">
-                            <textarea name="Consulta" id="" cols="60" rows="20" placeholder="Dejanos tu Consulta"></textarea>
-                            <br>
-                            <input type="submit" class="botones">
-                            <input type="reset" value="borrar" class="botones">
 
+                            <div class="col">
+                                <textarea name="Consulta" id="" cols="60" rows="20" placeholder="Dejanos tu Consulta"></textarea>
+                                <br>
+                                <input type="submit" class="botones">
+                                <input type="reset" value="borrar" class="botones">
+
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -120,3 +123,12 @@
 </body>
 
 </html>
+<div class="row opciones">
+    <div class="col">
+        <a href="./contacto.html"><img class="imagenes" class="i208" src="../img/208prueba.jpg" alt="208autoplan"></a>
+    </div>
+    <div class="col">
+        <a href="./contacto.html"><img class="imagenes" class="i2008 img-thumbnail " src="../img/2008prueba.jpg" alt="2008prueba"></a>
+    </div>
+
+</div>
