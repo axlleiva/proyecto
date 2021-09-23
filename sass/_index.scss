@@ -30,6 +30,14 @@
     height: 15rem;
 }
 
+.hov {
+    cursor: pointer;
+}
+
+.hov:hover {
+    box-shadow: blue 10px 0px 25px;
+}
+
 .texto-tipo {
     font-size: 20px;
     padding: 20px;

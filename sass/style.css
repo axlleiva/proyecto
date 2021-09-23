@@ -321,6 +321,15 @@ footer .logoFondo {
   height: 15rem;
 }
 
+.hov {
+  cursor: pointer;
+}
+
+.hov:hover {
+  -webkit-box-shadow: blue 10px 0px 25px;
+          box-shadow: blue 10px 0px 25px;
+}
+
 .texto-tipo {
   font-size: 20px;
   padding: 20px;
@@ -481,8 +490,46 @@ main .txt-aling {
 }
 
 .opciones .imagenes {
-  height: 250px;
-  padding: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.contenedor {
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+
+.contenedor .capa {
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  height: 100%;
+  width: 95%;
+  background: #0d100fa6;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor .capa a {
+  text-decoration: none;
+  color: white;
+}
+
+.contenedor:hover > .capa {
+  opacity: 1;
+  visibility: visible;
 }
 
 .texto {
